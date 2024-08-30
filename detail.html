@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DETAIL</title>
+    <link rel="stylesheet" href="./detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="headerDiv">
+      <div class="subHeader">
+        <a href="./index.html"><div class="logo">LOGO</div></a>
+        <div class="empty"></div>
+        <div class="navHolder" id="navHolder">
+          <a href="./index.html"><nav>Home</nav></a>
+          <a href="./product.html"> <nav>Product</nav></a>
+          <a href="./About.html"> <nav>About Us</nav> </a>
+          <a href="./Contact.html"> <nav>Contact Us</nav></a>
+        </div>
+        <div class="iconDiv">
+          <a href="./signUp.html"
+            ><img src="./Image/user-svgrepo-com.svg" alt=""
+          /></a>
+          <a href="./cart.html">
+            <img src="./Image/cart-shopping-svgrepo-com.svg" alt="" id="cart"
+          /></a>
+        </div>
+        <div class="hamBurger" id="hamBurger">
+          <img src="./Image/hamburger-md-svgrepo-com.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="firstSection">
+      <div class="detailHero">
+        <div class="leftDetail">
+          <div class="bigImage">
+            <img src="./Image/7043778_878.jpg" alt="" />
+          </div>
+          <div class="smallImage">
+            <div class="smallCard">
+              <img src="./Image/7043780_880.jpg" alt="" />
+            </div>
+            <div class="smallCard">
+              <img src="./Image/7043780_880.jpg" alt="" />
+            </div>
+            <div class="smallCard">
+              <img src="./Image/7043780_880.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="rightDetail">
+          <div class="innerRightDetail">
+            <div class="detailName">Comfortable Leather Chair</div>
+            <div class="detailInfo">
+              From concept to creation,we shape experience by designing
+            </div>
+            <div class="PriceDiv">
+              <div class="price">Price:</div>
+              <div class="Amount" id="Amount">#1500</div>
+            </div>
+            <div class="buttondiv">
+              <div class="quantityDiv">
+                <div class="minus" onclick="Decrease()">-</div>
+                <div class="quantity" id="number">1</div>
+                <div class="plus" onclick="Increase()">+</div>
+              </div>
+              <a href="./checkout.html">
+                <button class="detailbutton">Add to Cart</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="infoDivs">
+        <div class="headLines">Details</div>
+        <div class="sizeInfo">
+          Ankara Chair with Fabric Cushion 29.75"Wx28"Dx30.5"H
+        </div>
+        <div class="Info">
+          <ul>
+            <li>Frame is benchmade</li>
+            <li>Frame is benchmade</li>
+            <li>Frame is benchmade</li>
+            <li>Frame is benchmade</li>
+            <li>Frame is benchmade</li>
+          </ul>
+        </div>
+      </div>
+      <div class="Caption">RELATED PRODUCTS</div>
+      <div class="cardContainer" id="card-Container"></div>
+      <!-- footer -->
+      <footer>
+        <div class="headlineDiv">
+          <div class="headline">CONTACT US</div>
+          <div class="infoDiv">
+            <div class="info">Tel:(234)23-45-666</div>
+            <div class="info">Mon-Fri: 8am – 8pm</div>
+            <div class="info">Sat-Sun: 8am – 7pm</div>
+            <div class="info">Tel:(234)23-45-666</div>
+          </div>
+        </div>
+        <div class="headlineDiv">
+          <div class="headline">DESIGN SERVICE</div>
+          <div class="infoDiv">
+            <div class="info">Interior Design</div>
+            <div class="info">Room planner</div>
+            <div class="info">Our Projects</div>
+            <div class="info">Design Chat</div>
+          </div>
+        </div>
+        <div class="headlineDiv">
+          <div class="headline">ABOUT US</div>
+          <div class="infoDiv">
+            <div class="info">Our Story</div>
+            <div class="info">Careers</div>
+            <div class="info">Influencers</div>
+            <div class="info">Join our team</div>
+          </div>
+        </div>
+        <div class="headlineDiv">
+          <div class="headline">CLIENT SERVICE</div>
+          <div class="infoDiv">
+            <div class="info">Contact Us</div>
+            <div class="info">Constumer Service</div>
+            <div class="info">Find Store</div>
+            <div class="info">Shipping</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./detail.js"></script>
+  </body>
+</html>

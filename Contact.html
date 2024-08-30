@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactus</title>
+    <link rel="stylesheet" href="Contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="headerDiv">
+      <div class="subHeader">
+        <a href="./index.html"><div class="logo">LOGO</div></a>
+        <div class="empty"></div>
+        <div class="navHolder" id="navHolder">
+          <a href="./index.html"><nav>Home</nav></a>
+          <a href="./product.html"> <nav>Product</nav></a>
+          <a href="./About.html"><nav>About Us</nav></a>
+          <nav>Contact Us</nav>
+        </div>
+        <div class="iconDiv">
+          <a href="./signUp.html"
+            ><img src="./Image/user-svgrepo-com.svg" alt=""
+          /></a>
+          <a href="./cart.html">
+            <img src="./Image/cart-shopping-svgrepo-com.svg" alt="" id="cart"
+          /></a>
+        </div>
+        <div class="hamBurger" id="hamBurger">
+          <img src="./Image/hamburger-md-svgrepo-com.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="forthSection">
+      <div class="bigText">Get in touch with us.Send us a message</div>
+      <div class="smallText">
+        Sed viverra consectetur risus nec ultricies. Curabitur tincidunt
+        tincidunt urna id maximus.
+      </div>
+      <a href="./About.html"><button>ABOUT US</button></a>
+    </div>
+    <div class="firstSection">
+      <div class="leftContact">
+        <div class="contactUs">Contact Us</div>
+        <div class="contactUsSmall">
+          <div class="toUs">Call to Us:</div>
+          <div class="centertext">We’re available 24/7, 7 days a week.</div>
+          <div class="textinfo">+08 9229 8228</div>
+        </div>
+        <div class="contactUsSmall">
+          <div class="toUs">Write to Us:</div>
+          <div class="centertext">
+            Fill out our form and we will contact you within 24 hours.
+          </div>
+          <div class="textinfo">Email: Support1234@Jaroti</div>
+        </div>
+        <div class="contactUsSmall">
+          <div class="toUs">Headquarter:</div>
+          <div class="centertext">Monday – Friday: 9:00-20:00</div>
+          <div class="centertext">Saturday: 11:00 – 15:00</div>
+          <div class="textinfo">Kode10x Technology Solution</div>
+        </div>
+      </div>
+      <div class="rightContact">
+        <div class="TextDiv">We would love to hear from you.</div>
+        <div class="inputDiv">
+          <input type="text" placeholder="Name" class="input1" />
+          <input type="email" placeholder="Email" class="input1" />
+        </div>
+        <input type="text" placeholder="Subject" />
+        <input type="text" placeholder="Message" class="message" />
+        <button class="btnmessage">SEND MESSAGE</button>
+      </div>
+    </div>
+    <div>
+      <!-- <div class="mapwrapper">
+          <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15857.997013698483!2d3.282046!3d6.45825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b89b2bc30e901%3A0x4c0eced7c6b1b543!2sKode10x%20Technology%20Solutions%20Limited!5e0!3m2!1sen!2sng!4v1724966924465!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
+    </div>
+    <footer>
+      <div class="headlineDiv">
+        <div class="headline">CONTACT US</div>
+        <div class="infoDiv">
+          <div class="info">Tel:(234)23-45-666</div>
+          <div class="info">Mon-Fri: 8am – 8pm</div>
+          <div class="info">Sat-Sun: 8am – 7pm</div>
+          <div class="info">Tel:(234)23-45-666</div>
+        </div>
+      </div>
+      <div class="headlineDiv">
+        <div class="headline">DESIGN SERVICE</div>
+        <div class="infoDiv">
+          <div class="info">Interior Design</div>
+          <div class="info">Room planner</div>
+          <div class="info">Our Projects</div>
+          <div class="info">Design Chat</div>
+        </div>
+      </div>
+      <div class="headlineDiv">
+        <div class="headline">ABOUT US</div>
+        <div class="infoDiv">
+          <div class="info">Our Story</div>
+          <div class="info">Careers</div>
+          <div class="info">Influencers</div>
+          <div class="info">Join our team</div>
+        </div>
+      </div>
+      <div class="headlineDiv">
+        <div class="headline">CLIENT SERVICE</div>
+        <div class="infoDiv">
+          <div class="info">Contact Us</div>
+          <div class="info">Constumer Service</div>
+          <div class="info">Find Store</div>
+          <div class="info">Shipping</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const burgerMenu = () => {
+        const nav = document.getElementById("navHolder");
+        nav.classList.toggle("open");
+      };
+
+      document
+        .getElementById("hamBurger")
+        .addEventListener("click", burgerMenu);
+    </script>
+  </body>
+</html>

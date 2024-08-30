@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", system-ui;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .headerDiv {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky; /* for Safari */
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .subHeader {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .navHolder {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navHolder a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav {
+    cursor: pointer;
+  }
+  .iconDiv {
+    display: flex;
+    height: 22px;
+    gap: 20px;
+  }
+  .iconDiv img {
+    height: 100%;
+  }
+  .hamBurger {
+    height: 30px;
+    display: none;
+  }
+  .hamBurger img {
+    height: 100%;
+  }
+  .empty {
+    flex: 0.9;
+    display: none;
+  }
+  .smallcircle{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 22px;
+    right: 50px;
+  }
+
+  .FirstSection{
+    width: 100%;
+    height: 89vh;
+    /* background-color: aqua; */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .BigText{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .SmallText{
+    width: 85%;
+    text-align: center;
+    line-height: 1.3;
+    color: rgb(90, 90, 90);
+  }
+  .Image{
+    width: 100%;
+    height: 450px;
+  }
+  .Image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  .SecondSection{
+    width: 90%;
+    /* height: 400px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .leftImage{
+    width: 100%;
+    height: 100vh;
+  }
+  .leftImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .rightText{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+  }
+  .headline{
+    font-size: 33px;
+    font-weight: bold;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .boldText{
+    font-size: 20px;
+    font-weight: 520;
+  }
+  .lightText{
+    color: rgb(119, 118, 118);
+    font-size: 17px;
+  }
+  .thirdSection{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.ourTeamDIv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+.profileDiv{
+    width: 100%;
+    /* height: 320px; */
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.profileCard{
+    width: 273px;
+    height: 360px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+.picture{
+    width: 100%;
+    height: 85%;
+    /* background-color: azure; */
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.position{
+    font-size: 17px;
+    font-weight: 520;
+}
+.name{
+    font-weight: 400px;
+    color: rgb(119, 118, 118);
+}
+
+.forthSection{
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    background-image: url(./Image/background-section-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bigText{
+    font-size: 50px;
+    font-weight: 430;
+    color: white;
+  
+}
+.smallText{
+    width: 80%;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+button {
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 25px;
+  }
+  button:hover {
+    transition: border 0.3s ease-in-out;
+    background-color: rgb(47, 47, 47);
+    color: white;
+  }
+  button:active {
+    background-color: rgba(47, 47, 47, 0.683);
+  }
+ /* footer */
+
+ footer {
+    width: 90%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .headlineDiv {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .headline {
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .infoDiv {
+    font: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .info {
+    cursor: pointer;
+  }
+
+  
+@media (max-width: 500px) {
+    .navHolder {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0px;
+      height: 800px;
+      /* width: 340px; */
+      background-color: rgb(255, 255, 255);
+      color: black;
+      justify-content: flex-start;
+      gap: 40px;
+      font-size: 20px;
+      /* padding: 10px; */
+    }
+    .empty {
+      display: flex;
+    }
+    .hamBurger {
+      display: block;
+    }
+    .navHolder.open {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    footer {
+        width: 90%;
+        height: 190px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .headlineDiv {
+        width: 210px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+  }

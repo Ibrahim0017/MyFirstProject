@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", system-ui;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.headerDiv {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky; /* for Safari */
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.subHeader {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.navHolder {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.navHolder a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav {
+  cursor: pointer;
+}
+.iconDiv {
+  display: flex;
+  height: 22px;
+  gap: 20px;
+}
+.iconDiv img {
+  height: 100%;
+}
+.hamBurger {
+  height: 30px;
+  display: none;
+}
+.hamBurger img {
+  height: 100%;
+}
+.empty {
+  flex: 0.9;
+  display: none;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
+}
+.firstSection {
+  /* background-color: aquamarine; */
+  height: auto;
+  width: 90%;
+  margin-top: 80px;
+}
+.detailHero {
+  width: 100%;
+  /* height: calc(100vh - 80px); */
+  /* background-color: gray; */
+  display: flex;
+  gap: 40px;
+}
+.leftDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* height: 90%; */
+  /* background-color: rgb(222, 151, 44); */
+}
+.bigImage {
+  height: 70%;
+}
+.bigImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.smallImage {
+  display: flex;
+  justify-content: space-around;
+}
+.smallCard {
+  width: 130px;
+  height: 130px;
+}
+.smallCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightDetail {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(203, 203, 203, 0.149);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.innerRightDetail {
+  width: 78%;
+  /* background-color: aquamarine; */
+}
+.detailName {
+  font-size: 30px;
+  font-weight: bold;
+}
+.detailInfo {
+  width: 330px;
+  color: rgb(100, 100, 100);
+  margin: 10px 0px;
+}
+.PriceDiv {
+  display: flex;
+  font-size: larger;
+  gap: 4px;
+}
+.price {
+  font-weight: 400;
+}
+.Amount {
+  font-weight: 650;
+}
+.buttondiv {
+  width: 100%;
+  /* height: 80px; */
+  /* background-color: blanchedalmond; */
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.quantityDiv {
+  width: 160px;
+  height: 31px;
+  background-color: rgba(170, 170, 170, 0.648);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+.minus {
+  font-size: 58px;
+  font-weight: 350;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+.quantity {
+  font-size: 30px;
+}
+.plus {
+  font-size: 40px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.detailbutton {
+  background-color: rgb(0, 0, 0);
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.detailbutton:hover {
+  transition: border 0.3s ease-in-out;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+.detailbutton:active {
+  background-color: rgba(47, 47, 47, 0.683);
+}
+.infoDivs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  /* background-color: aquamarine; */
+}
+li {
+  list-style-position: inside;
+  font-size: 16px;
+  font-weight: 400;
+}
+.headLines {
+  font-size: 27px;
+  font-weight: bold;
+}
+.sizeInfo {
+  font-size: 18px;
+  font-weight: 450;
+  margin: 1px 0px 15px 0px;
+  color: rgba(42, 42, 42, 0.971);
+}
+.Caption {
+  margin: 17px 0px 0px 0px;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(42, 42, 42, 0.971);
+
+}
+.cardContainer {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin: 37px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 230px;
+    height: 400px;
+    background-color: rgba(238, 238, 238, 0.782);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 300px;
+  }
+  button {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    border: 3px solid rgb(248, 248, 248);
+    margin-top: -5px;
+  }
+  button:hover {
+    transition: border 0.03s ease-in-out;
+    background-color: rgb(47, 47, 47);
+    color: white;
+  }
+  button:active {
+    background-color: rgba(47, 47, 47, 0.683);
+  }
+  /* footer */
+
+footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .headlineDiv {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .headline {
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .infoDiv {
+    font: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .info {
+    cursor: pointer;
+  }
+
+  @media (max-width: 500px) {
+  .navHolder {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    height: 800px;
+    /* width: 340px; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    justify-content: flex-start;
+    gap: 40px;
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+  .empty {
+    display: flex;
+  }
+  .hamBurger {
+    display: block;
+  }
+  .navHolder.open {
+    display: flex;
+    flex-direction: column;
+  }
+  .detailHero {
+    width: 100%;
+    /* height: calc(100vh - 80px); */
+    /* background-color: gray; */
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .cardContainer{
+    width: 100%;
+  }
+  .card{
+    width: 169px;
+    padding: 1;
+  }
+
+
+
+  footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .headlineDiv {
+    width: 210px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

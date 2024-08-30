@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", system-ui;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headerDiv {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky; /* for Safari */
+    position: fixed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+  }
+  .subHeader {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .navHolder {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navHolder a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav {
+    cursor: pointer;
+  }
+  .iconDiv {
+    display: flex;
+    height: 22px;
+    gap: 20px;
+  }
+  .iconDiv img {
+    height: 100%;
+  }
+  .hamBurger {
+    height: 30px;
+    display: none;
+  }
+  .hamBurger img {
+    height: 100%;
+  }
+  .empty {
+    flex: 0.9;
+    display: none;
+  }
+  .ProductDiv{
+    text-decoration: none;
+    color: black;
+    margin: 8px 0px;
+  }
+  .smallcircle{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 22px;
+    right: 50px;
+  }
+
+  .firstSection{
+    width: 90%; 
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .leftContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  .contactUs{
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .contactUsSmall{
+    text-align: center;
+  }
+  .contactUsSmall{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .toUs{
+    font-size: 24px;
+    font-weight: 450;
+  }
+  .centertext{
+    font-weight: 600;
+    color: rgb(152, 152, 152);
+  }
+  .textinfo{
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .textinfo:hover{
+    text-decoration: underline;
+  }
+.rightContact{
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.TextDiv{
+  font-size: 25px;
+  font-family: 600;
+}
+.inputDiv{
+  display: flex;
+  gap: 20px;
+}
+.input1{
+  width: 43%;
+  height: 35px;
+}
+input{
+  width: 94.6%;
+  height: 35px;
+  padding: 10px;
+}
+.message{
+  height: 30px;
+  height: 95px;
+}
+.btnmessage{
+  width: 100%;
+}
+
+ /* footer */
+
+ footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .headlineDiv {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .headline {
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .infoDiv {
+    font: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .info {
+    cursor: pointer;
+  }
+  
+.forthSection{
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  background-image: url(./Image/background-section-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bigText{
+  font-size: 50px;
+  font-weight: 430;
+  color: white;
+
+}
+.smallText{
+  width: 80%;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+button {
+  background-color: rgb(0, 0, 0);
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 25px;
+}
+button:hover {
+  transition: border 0.3s ease-in-out;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+button:active {
+  background-color: rgba(47, 47, 47, 0.683);
+}
+.mapwrapper{
+  width: 480px;
+}
+.googleMap{
+  width: 100%;
+}
+
+  @media (max-width: 500px) {
+    .navHolder {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0px;
+      height: 800px;
+      /* width: 340px; */
+      background-color: rgb(255, 255, 255);
+      color: black;
+      justify-content: flex-start;
+      gap: 40px;
+      font-size: 20px;
+      /* padding: 10px; */
+    }
+    .empty {
+      display: flex;
+    }
+    .hamBurger {
+      display: block;
+    }
+    .navHolder.open {
+      display: flex;
+      flex-direction: column;
+    }
+  .firstSection{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+    footer {
+      width: 90%;
+      height: 190px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .headlineDiv {
+      width: 210px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+
+  @media (min-width:501px) and (max-width:984px) {
+    .firstSection{
+      display: flex;
+      justify-content: center;
+    }  
+  }

@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", system-ui;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.headerDiv {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky; /* for Safari */
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.subHeader {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.navHolder {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.navHolder a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav {
+  cursor: pointer;
+}
+.iconDiv {
+  display: flex;
+  height: 22px;
+  gap: 20px;
+}
+.iconDiv img {
+  height: 100%;
+}
+.hamBurger {
+  height: 30px;
+  display: none;
+}
+.hamBurger img {
+  height: 100%;
+}
+.empty {
+  flex: 0.9;
+  display: none;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
+}
+.firstSection {
+  /* height: 100vh; */
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.Caption {
+  margin-top: 120px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.leftRight {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 68px;
+}
+.leftDiv {
+  width: 660px;
+  height: fit-content;
+}
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+.nameDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.name{
+    font-size: 16px;
+}
+.input{
+    width: 96%;
+    height: 20px;
+    padding: 10px;
+}
+.rightDiv {
+  width: 400px;
+  height: 55 0px;
+  background-color: #F7F7F7;
+  border-radius: 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  width: 90%;
+  height: 1px; /* adjust the height */
+  background-color: #ccc; /* adjust the color */
+  margin: 20px 0px;
+}
+.productPrice {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.yourOrder{
+    font-size: 20px;
+    align-self: flex-start;
+    margin: 20px 12px;
+    font-weight: 560;
+}
+.productName{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.digit{
+    font-weight: 700;
+}
+.radioDiv{
+    display: flex;
+    flex-direction: column;
+
+}
+.ShippingDiv{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+label{
+    display: flex;
+    cursor: pointer;
+}
+.text{
+    margin-left: 7px;
+}
+.productPrice2 {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.DeliveryDiv{
+    width: 90%;
+}
+.Delivery{
+    display: flex;
+    margin-left: 7px;
+    gap: 7px;
+}
+p{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.checkbutton {
+    background-color: rgb(0, 0, 0);
+    width: 74%;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 25px;
+  }
+  .checkbutton:hover {
+    transition: border 0.3s ease-in-out;
+    background-color: rgb(47, 47, 47);
+    color: white;
+  }
+  .checkbutton:active {
+    background-color: rgba(47, 47, 47, 0.683);
+  }
+  .line2 {
+    width: 100%;
+    height: 1px; /* adjust the height */
+    background-color: #ccc; /* adjust the color */
+    margin: 20px 0px;
+  }
+   /* footer */
+
+footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .headlineDiv {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .headline {
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .infoDiv {
+    font: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .info {
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 500px) {
+    .navHolder {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0px;
+      height: 800px;
+      /* width: 340px; */
+      background-color: rgb(255, 255, 255);
+      color: black;
+      justify-content: flex-start;
+      gap: 40px;
+      font-size: 20px;
+      /* padding: 10px; */
+    }
+    .empty {
+      display: flex;
+    }
+    .hamBurger {
+      display: block;
+    }
+    .navHolder.open {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  
+  
+  
+    footer {
+      width: 100%;
+      height: 190px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .headlineDiv {
+      width: 210px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }

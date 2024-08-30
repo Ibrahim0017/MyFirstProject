@@ -1,0 +1,613 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", system-ui;
+}
+
+.headerDiv {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky; /* for Safari */
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.subHeader {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.navHolder {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.navHolder a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav {
+  cursor: pointer;
+}
+.iconDiv {
+  display: flex;
+  height: 22px;
+  gap: 20px;
+}
+.iconDiv img {
+  height: 100%;
+}
+.hamBurger {
+  height: 30px;
+  display: none;
+}
+.hamBurger img {
+  height: 100%;
+}
+.empty {
+  flex: 0.9;
+  display: none;
+}
+
+/* hero Section */
+.heroDiv {
+  width: 100%;
+  background-color: #fff0db;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.subHero {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightDiv {
+  width: 50%;
+  height: 90%;
+  margin-top: auto;
+  margin-left: 50px;
+}
+.rightDiv img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+.leftDiv {
+  width: 60%;
+  /* height: 70%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  /* background-color: aqua; */
+}
+.Number {
+  font: large;
+  font: bolder;
+  font-size: 25px;
+  display: flex;
+  gap: 20px;
+}
+.red {
+  font-weight: bolder;
+  color: #ff0000;
+}
+.black {
+  text-decoration: line-through;
+}
+.Text {
+  color: #000000ce;
+  width: 500px;
+  font-size: 75px;
+}
+.smallText {
+  margin: 10px 0;
+  font-size: 22px;
+}
+.HeroButton {
+  width: 150px;
+  height: 45px;
+  margin-top: 13px;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.HeroButton:hover {
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+/* secondSEction */
+.Secondsection {
+  /* height: 700px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.subSecond {
+  margin-top: 30px;
+  width: 90%;
+}
+.cartName {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.svgIconDiv {
+  height: 100px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.svgDiv {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.image {
+  width: 25%;
+  height: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.iconName {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.iconText {
+  font-size: 35px;
+}
+.Product {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.616);
+}
+.line {
+  width: 100%;
+  height: 1px; /* adjust the height */
+  background-color: #ccc; /* adjust the color */
+  margin: 20px 0px;
+}
+
+.promoSection {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 37px;
+}
+.leftPromo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightPromo {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.promoImage {
+  height: 500px;
+}
+.promoImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.promoSmall {
+  margin: 15px 0px;
+}
+.promoBig {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.2;
+}
+.Caption {
+  margin: 15px 0px 0px 0px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  margin: 37px 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 230px;
+  height: 400px;
+  background-color: rgba(238, 238, 238, 0.782);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
+button {
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  border: 3px solid rgb(248, 248, 248);
+  margin-top: -5px;
+}
+button:hover {
+  transition: border 0.3s ease-in-out;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+button:active {
+  background-color: rgba(47, 47, 47, 0.683);
+}
+.ProductDiv {
+  color: #000000d5;
+  margin: 7px 0px;
+}
+.bannerDiv {
+  /* width: 100%; */
+  height: 300px;
+  background-color: bisque;
+  display: flex;
+}
+.leftBanner {
+  width: 100%;
+  /* background-color: #ccc; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bannerSmallText {
+  font-size: 20px;
+}
+.bannerBigText {
+  font-size: 60px;
+}
+.bannerTime {
+  width: 85%;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.circle {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h4 {
+  font-size: 25px;
+}
+p {
+  font-weight: bold;
+  color: rgb(101, 101, 101);
+}
+.rightBanner {
+  width: 100%;
+  /* background-color: #a27f4e; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bannerImg {
+  width: 80%;
+}
+.bannerImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutDiv {
+  height: 280px;
+  background-color: #f2f1f1;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  justify-content: space-between;
+}
+.aboutLeft {
+  width: 450px;
+  height: 80%;
+  border-radius: 8px;
+  background-color: white;
+  padding: 13px 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.BigText {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.aboutright {
+  width: 550px;
+}
+.aboutright img {
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.headlineDiv {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.headline {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.infoDiv {
+  font: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.info {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .firstSection{
+    width: 100%;
+  }
+  .navHolder {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    height: 800px;
+    /* width: 340px; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    justify-content: flex-start;
+    gap: 40px;
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+  .empty {
+    display: flex;
+  }
+  .hamBurger {
+    display: block;
+  }
+  .navHolder.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Hero*/
+  .heroDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftDiv {
+    width: 100%;
+    height: 50%;
+    /* background-color: aquamarine; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22px;
+  }
+  .Number {
+    text-align: center;
+  }
+  .rightDiv{
+    display: none;
+  }
+  .Text {
+    font-size: 60px;
+  }
+  #svgDiv {
+    display: none;
+  }
+  #svgDiv1 {
+    display: none;
+  }
+  .subSecond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .svgIconDiv {
+    width: 70%;
+  }
+  .svgDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .iconText {
+    font-size: 20px;
+  }
+  .Product {
+    width: 100px;
+    display: flex;
+  }
+  .image {
+    width: 50px;
+  }
+  .line {
+    margin-top: 35px;
+  }
+
+  .promoSection {
+    height: auto;
+    /* background-color: aqua; */
+    flex-direction: column;
+  }
+  .leftPromo {
+    width: 100%;
+  }
+  .rightPromo {
+    width: 100%;
+  }
+  .cardContainer {
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;  */
+  }
+  .card{
+    width: 169px;
+    padding: 1;
+  }
+  .bannerDiv {
+    /* width: 100%; */
+    height: 400px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+    justify-content: space-between;
+  }
+  .leftBanner {
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .bannerBigText {
+    font-size: 50px;
+  }
+  .circle {
+    width: 90px;
+  }
+  .rightBanner {
+    margin-bottom: -3px;
+  }
+  .aboutDiv {
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+  }
+  .aboutright {
+    width: 350px;
+  }
+  footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .headlineDiv {
+    width: 210px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 847px) {
+  .navHolder {
+    width: 350px;
+  }
+  nav {
+    gap: 20px;
+  }
+  .heroDiv {
+    height: 500px;
+    display: flex;
+    align-items: center;
+  }
+  .Text {
+    font-size: 60px;
+  }
+  .rightDiv {
+    display: flex;
+    justify-content: center;
+  }
+  #svgDiv1 {
+    display: none;
+  }
+  .promoBig {
+    width: 300px;
+  }
+}
+
+@media (min-width: 848px) and (max-width: 1000px) {
+  .navHolder {
+    width: 350px;
+  }
+  nav {
+    gap: 20px;
+  }
+  .heroDiv {
+    height: 500px;
+  }
+  .leftDiv {
+    margin-top: 30px;
+  }
+  .Text {
+    font-size: 60px;
+  }
+  .rightDiv {
+    display: flex;
+    justify-content: center;
+  }
+  .promoSection {
+    height: 580px;
+  }
+  .promoImage {
+    height: 440px;
+  }
+  .promoBig {
+    width: 300px;
+  }
+}

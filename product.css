@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", system-ui;
+}
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerDiv {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky; /* for Safari */
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", system-ui;
+}
+.subHeader {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  font-family: "Roboto", system-ui;
+}
+.navHolder {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", system-ui;
+}
+.navHolder a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", system-ui;
+}
+nav {
+  cursor: pointer;
+}
+.iconDiv {
+  display: flex;
+  height: 22px;
+  gap: 20px;
+}
+.iconDiv img {
+  height: 100%;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
+}
+.hamBurger {
+  height: 30px;
+  display: none;
+}
+.hamBurger img {
+  height: 100%;
+}
+.empty {
+  flex: 0.9;
+  display: none;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
+}
+.productBody {
+  width: 90%;
+  /* height: 100vh; */
+  /* background-color: aquamarine; */
+  display: flex;
+  
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.left {
+  width: 33%;
+  height: 260px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 60px;
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 10px;
+  padding: 10px;
+}
+.Categories {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.TickLine {
+  width: 100%;
+  height: 1.7px; /* adjust the height */
+  background-color: #757575;
+  margin: 10px 0px;
+}
+.Select {
+  background-color: #bbbbbb5f;
+  border: 1px solid rgb(140, 134, 134);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.Select.close {
+  display: none;
+}
+.right {
+  width: 100%;
+  /* height: auto; */
+  /* background-color: antiquewhite; */
+  margin-top: 60px;
+}
+.cardContainer {
+  /* width: 100%; */
+  display: flex;
+  gap: 10px;
+  /* margin: 37px 0px; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 230px;
+  height: 400px;
+  background-color: rgba(238, 238, 238, 0.782);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
+button {
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  border: 3px solid rgb(248, 248, 248);
+  margin-top: -5px;
+}
+button:hover {
+  transition: border 0.3s ease-in-out;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+button:active {
+  background-color: rgba(47, 47, 47, 0.683);
+}
+.ProductDiv{
+  text-decoration: none;
+  color: black;
+  margin: 8px 0px;
+}
+.line {
+  width: 90%;
+  height: 1px; /* adjust the height */
+  background-color: #ccc; /* adjust the color */
+  margin: 20px 0px;
+}
+
+/* footer */
+
+footer {
+  width: 90%;
+  height: 190px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+.headlineDiv {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.headline {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.infoDiv {
+  font: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.info {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .navHolder {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    height: 800px;
+    /* width: 340px; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    justify-content: flex-start;
+    gap: 40px;
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+  .empty {
+    display: flex;
+  }
+  .hamBurger {
+    display: block;
+  }
+  .navHolder.open {
+    display: flex;
+    flex-direction: column;
+  }
+  .productBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left{
+    width: 90%;
+  }
+  .cardContainer{
+    width: 100%;
+  }
+  .card{
+    width: 172px;
+    padding: 1;
+  }
+
+  footer {
+    width: 90%;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .headlineDiv {
+    width: 210px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

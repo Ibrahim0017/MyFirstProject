@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerDiv {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky; /* for Safari */
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.subHeader {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.navHolder {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.navHolder a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav {
+  cursor: pointer;
+  text-decoration: none;
+}
+.iconDiv {
+  display: flex;
+  height: 22px;
+  gap: 20px;
+}
+.iconDiv img {
+  height: 100%;
+}
+.hamBurger {
+  height: 30px;
+  display: none;
+}
+.hamBurger img {
+  height: 100%;
+}
+.empty {
+  flex: 0.9;
+  display: none;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
+}
+
+.bigText{
+font-size: 25px;
+font-weight: 600;
+margin-top: 120px;
+margin-bottom: 20px;
+}
+.TopinfoDiv{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.product{
+  font-size: 18px;
+  font-weight: 510;
+}
+.group{
+  width: 49.2%;
+  justify-content: space-between;
+  display: flex;
+}
+.line{
+  width: 90%;
+  height: 1px;
+  background-color: rgb(114, 114, 114);
+}
+.container{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.itemCartDiv{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageDiv{
+  width: 120px;
+  height: 100%;
+}
+.imageDiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nameDiv{
+  height: auto;
+  text-align: center;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /* background-color: antiquewhite; */
+}
+.empty1{
+  width: 18%;
+}
+.group1{
+  width: 47.5%;
+  justify-content: space-between;
+  display: flex;
+}
+.quantityDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+button{
+  height: 30px;
+  width: 23px;
+  background-color: rgb(210, 210, 210);
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  color: rgb(54, 54, 54);
+}
+
+
+footer {
+  width: 90%;
+  height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.headlineDiv {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.headline {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.infoDiv {
+  font: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.info {
+  cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+  .navHolder {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    height: 800px;
+    /* width: 340px; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    justify-content: flex-start;
+    gap: 40px;
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+  .empty {
+    display: flex;
+  }
+  .hamBurger {
+    display: block;
+  }
+  .navHolder.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .group{
+    width: 41%;
+    /* justify-content: space-between; */
+    display: flex;
+  }
+
+}
+@media (min-width:500px) and (max-width: 800px) {
+  .empty1{
+    display: none;
+  }
+  .group1{
+    width: 48%;
+    /* justify-content: space-between; */
+    display: flex;
+    margin-left: auto;
+  }
+
+}

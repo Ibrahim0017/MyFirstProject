@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckoutPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./checkout.css" />
+  </head>
+  <body>
+    <div class="headerDiv">
+      <div class="subHeader">
+        <a href="./index.html"><div class="logo">LOGO</div></a>        <div class="empty"></div>
+        <div class="navHolder" id="navHolder">
+          <a href="./index.html"><nav>Home</nav></a>
+          <a href="./product.html"> <nav>Product</nav></a>
+          <a href="./About.html"> <nav>About Us</nav> </a>
+          <a href="./Contact.html"><nav>Contact Us</nav></a>
+        </div>
+        <div class="iconDiv">
+          <a href="./signUp.html"
+            ><img src="./Image/user-svgrepo-com.svg" alt=""
+          /></a>
+          <a href="./cart.html">        <img src="./Image/cart-shopping-svgrepo-com.svg" alt="" id="cart" /></a>        </div>
+        <div class="hamBurger" id="hamBurger">
+          <img src="./Image/hamburger-md-svgrepo-com.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="firstSection">
+      <div class="Caption">CHECKOUT</div>
+      <div class="leftRight">
+        <div class="leftDiv">
+          <h4>Billing Detail</h4>
+          <div class="nameDiv">
+            <div class="name">Name</div>
+            <input type="text" class="input" />
+          </div>
+          <div class="nameDiv">
+            <div class="name">Address</div>
+            <input type="text" class="input" />
+          </div>
+          <div class="nameDiv">
+            <div class="name">Phone</div>
+            <input type="number" class="input" />
+          </div>
+        </div>
+        <div class="rightDiv">
+          <div class="yourOrder">YOUR ORDER</div>
+          <div class="productPrice">
+            <div class="product">Product</div>
+            <div class="product">Price</div>
+          </div>
+          <div class="line"></div>
+          <div class="productName">
+            <div class="name">Comfortable Leather Chair</div>
+            <div class="digit">#1500</div>
+          </div>
+          <div class="line"></div>
+          <div class="productPrice">
+            <div class="product">Price</div>
+            <div class="digit">#1500</div>
+          </div>
+          <div class="line"></div>
+          <div class="ShippingDiv">
+            <div class="Shipping">Shipping</div>
+            <form class="radioDiv">
+              <label for="">
+                <input type="radio" />
+                <div class="text">Flat Rate: #10</div></label
+              >
+              <label for="">
+                <input type="radio" />
+                <div class="text">Local pickup: #5</div></label
+              >
+            </form>
+          </div>
+          <div class="productPrice2">
+            <div class="product">Total</div>
+            <div class="digit">#1510</div>
+          </div>
+          <div class="line"></div>
+          <div class="DeliveryDiv">
+            <label for="">
+              <input type="radio" />
+              <div class="Delivery">Cash on Delivery</div></label
+            >
+            <label for="">
+              <input type="checkbox" />
+              <div class="Delivery">
+                I agree to your
+                <p>Terms and condition</p>
+              </div></label
+            >
+          </div>
+          <button class="checkbutton" onclick="Order()">PLACE ORDER</button>
+        </div>
+      </div>
+      <div class="line2"></div>
+      <!-- footer -->
+      <footer>
+        <div class="headlineDiv">
+          <div class="headline">CONTACT US</div>
+          <div class="infoDiv">
+            <div class="info">Tel:(234)23-45-666</div>
+            <div class="info">Mon-Fri: 8am – 8pm</div>
+            <div class="info">Sat-Sun: 8am – 7pm</div>
+            <div class="info">Tel:(234)23-45-666</div>
+          </div>
+        </div>
+        <div class="headlineDiv">
+          <div class="headline">DESIGN SERVICE</div>
+          <div class="infoDiv">
+            <div class="info">Interior Design</div>
+            <div class="info">Room planner</div>
+            <div class="info">Our Projects</div>
+            <div class="info">Design Chat</div>
+          </div>
+        </div>
+        <div class="headlineDiv">
+          <div class="headline">ABOUT US</div>
+          <div class="infoDiv">
+            <div class="info">Our Story</div>
+            <div class="info">Careers</div>
+            <div class="info">Influencers</div>
+            <div class="info">Join our team</div>
+          </div>
+        </div>
+        <div class="headlineDiv">
+          <div class="headline">CLIENT SERVICE</div>
+          <div class="infoDiv">
+            <div class="info">Contact Us</div>
+            <div class="info">Constumer Service</div>
+            <div class="info">Find Store</div>
+            <div class="info">Shipping</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./checkout.js"></script>
+  </body>
+</html>
