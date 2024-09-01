@@ -29,6 +29,14 @@ body {
   justify-content: space-between;
   font-family: "Roboto", system-ui;
 }
+.logo{
+  width: 60px;
+  height: 60px;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
 .navHolder {
   width: 400px;
   display: flex;
@@ -247,6 +255,10 @@ footer {
   .navHolder.open {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .navHolder.open :hover{
+    text-decoration: underline;
   }
   .productBody {
     display: flex;

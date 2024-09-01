@@ -46,6 +46,8 @@ const burgerMenu = () => {
 
 document.getElementById("hamBurger").addEventListener("click", burgerMenu);
 
+
+
 const amount = document.getElementById("Amount")
 
 let value = parseInt(document.getElementById("number").innerHTML);

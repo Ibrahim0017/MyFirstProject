@@ -25,6 +25,14 @@ body {
   justify-content: center;
   justify-content: space-between;
 }
+.logo{
+  width: 60px;
+  height: 60px;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
 .navHolder {
   width: 400px;
   display: flex;
@@ -45,6 +53,21 @@ nav {
 }
 .iconDiv img {
   height: 100%;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
 }
 .hamBurger {
   height: 30px;
@@ -123,9 +146,10 @@ nav {
   align-items: center;
   border-radius: 10px;
   padding: 30px;
+  flex-direction: column;
 }
 .innerRightDetail {
-  width: 78%;
+  width: 80%;
   /* background-color: aquamarine; */
 }
 .detailName {
@@ -201,6 +225,7 @@ nav {
   background-color: rgba(47, 47, 47, 0.683);
 }
 .infoDivs {
+  width: 80%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -322,6 +347,10 @@ footer {
   .navHolder.open {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .navHolder.open :hover{
+    text-decoration: underline;
   }
   .detailHero {
     width: 100%;

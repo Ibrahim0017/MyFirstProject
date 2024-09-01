@@ -28,6 +28,14 @@
     justify-content: center;
     justify-content: space-between;
   }
+  .logo{
+    width: 60px;
+    height: 60px;
+  }
+  .logo img{
+    width: 100%;
+    height: 100%;
+  }
   .navHolder {
     width: 400px;
     display: flex;
@@ -48,6 +56,21 @@
   }
   .iconDiv img {
     height: 100%;
+  }
+  .smallcircle{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 22px;
+    right: 50px;
   }
   .hamBurger {
     height: 30px;
@@ -125,30 +148,63 @@
     object-fit: cover;
   }
   .rightText{
-    /* width: 50%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-
+    align-items: center;
   }
   .headline{
     font-size: 33px;
     font-weight: bold;
+    
+  }
+  .aboutcard{
+    width: 100%;
+    /* background-color: brown; */
+/* height: 300px; */
+display: flex;
+justify-content: space-between;
+gap: 86px;
+flex-wrap: wrap;
+justify-content: center;
   }
   .text{
+    width: 300px;
+    height: 335px;
+    /* flex-wrap: wrap; */
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
+    background-color: rgba(239, 239, 239, 0.37);
+    padding: 20px 0px;
+    border-radius: 10px;
   }
-  .boldText{
-    font-size: 20px;
-    font-weight: 520;
+  .text:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  .lightText{
-    color: rgb(119, 118, 118);
-    font-size: 17px;
+  .svgImage{
+    width: 100px;
+    height: 100px;
   }
+  .svgImage img{
+    height: 100%;
+    width: 100%;
+  }
+  .cardbigText{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .cardsmallText{
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+    font-weight: 480;
+    color: rgb(125, 125, 125);
+  }
+  
   .thirdSection{
     width: 90%;
     display: flex;
@@ -302,6 +358,10 @@ button {
     .navHolder.open {
       display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+    .navHolder.open :hover{
+      text-decoration: underline;
     }
 
 

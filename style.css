@@ -21,6 +21,14 @@
   justify-content: center;
   justify-content: space-between;
 }
+.logo{
+  width: 60px;
+  height: 60px;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
 .navHolder {
   width: 400px;
   display: flex;
@@ -41,6 +49,21 @@ nav {
 }
 .iconDiv img {
   height: 100%;
+}
+.smallcircle{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 22px;
+  right: 50px;
 }
 .hamBurger {
   height: 30px;
@@ -402,6 +425,7 @@ footer {
     width: 100%;
   }
   .navHolder {
+    /* width: 100%; */
     display: none;
     position: fixed;
     top: 80px;
@@ -414,6 +438,7 @@ footer {
     gap: 40px;
     font-size: 20px;
     /* padding: 10px; */
+    
   }
   .empty {
     display: flex;
@@ -424,6 +449,10 @@ footer {
   .navHolder.open {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .navHolder.open :hover{
+    text-decoration: underline;
   }
 
   /*Hero*/
@@ -442,6 +471,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-left: 22px;
+    
   }
   .Number {
     text-align: center;
@@ -451,6 +481,7 @@ footer {
   }
   .Text {
     font-size: 60px;
+  
   }
   #svgDiv {
     display: none;
@@ -523,6 +554,7 @@ footer {
     justify-content: space-around;
   }
   .bannerBigText {
+   
     font-size: 50px;
   }
   .circle {
@@ -530,6 +562,7 @@ footer {
   }
   .rightBanner {
     margin-bottom: -3px;
+    
   }
   .aboutDiv {
     width: 80%;
